@@ -1,0 +1,277 @@
+{% extends 'base.html' %}
+
+<!--Título-->
+{% block title %}Home{% endblock %}
+
+<!--Conteúdo-->
+{% block content %}
+
+<!--Boas Vindas-->
+<div class="fundo1">
+
+ <div class="row gx-4 gx-lg-5 align-items-center justify-content-center py-3 container-fluid">
+    <div class="col-lg-5">
+      <h2 style="color: green; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sejam bem-vindos à Numbs by Linkin Park</h1>
+        
+      
+    </div>
+ </div>
+
+ <div class="text-center container-fluid" style="color: rgb(0, 0, 0); font-size: 26px;">
+    <p class="font-weight-light text-center">
+        Queridos LPSoldiers, sejam bem-vindos à casa dos fãs de Linkin Park!<br>
+        Entre e mergulhe no mundo da banda que marcou gerações com sua música única e poderosa.
+    </p>
+    <div class="d-flex justify-content-center">
+        <img class="img-fluid rounded pb-4 mb-lg-0" src="/static/images/Home1.jpg" style="max-width: 60%;" alt="..." />
+    </div>
+ </div>
+
+</div>
+
+<!-- Tentativa de Carrossel -->
+ 
+<div class="fundo2">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Se você tem estilos personalizados -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+  <h1 style="color: green; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Veja algumas imagens do Linkin Park</h1>
+ <div class="container1">
+  <div id="carouselExampleIndicators" class="carousel slide" style="max-width: 1500px;text-align: center;" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/images/Home2.jpg" style="width: 1500px;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/Home10.webp"style="width: 1500px;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/Home5.jpg"style="width: 1500px;" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS Bundle (Bootstrap JS + Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+ </div>
+ 
+</div>
+<br>
+
+<!--Integrantes-->
+<div class="fundo1">
+
+  <h1 style="color: green; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Conheça os integrantes da banda</h1>
+  <div class="container1" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <!--Chester-->
+    <div class="card" style="width: 18rem; margin-right: 250px;margin-bottom: 40px;">
+      <img src="/static/images/Chester Benington.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Chester Bennington</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Vocalista principal</p>
+        <p class="card-text" style="font-size: 13px;">Vocalista principal do Linkin Park, conhecido por sua voz poderosa e letras emotivas. Sua partida prematura em 2017 deixou uma lacuna na música, mas seu legado perdura.</p>
+      </div>
+    </div>
+
+    <!--Mike Shinoda-->
+    <div class="card" style="width: 18rem; margin-right: 250px;margin-bottom: 40px;">
+      <img src="/static/images/MikeShinoda.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Mike Shinoda</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Vocalista/Multi-instrumentista</p>
+        <p class="card-text" style="font-size: 13px;">Co-fundador do Linkin Park e talentoso multi-instrumentista. Reconhecido por sua versatilidade e inovação, tanto como produtor quanto como artista solo.</p>
+      </div>
+    </div>
+
+  
+      <!--Brad Delson-->
+    <div class="card" style="width: 18rem;margin-right: 250px;margin-bottom: 40px;">
+      <img src="/static/images/BradDelson.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Brad Delson</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Guitarrista</p>
+        <p class="card-text" style="font-size: 12px;">Guitarrista e co-fundador do Linkin Park. Reconhecido por seu talento musical e contribuição para o som único da banda. Sua dedicação à música continua a inspirar fãs ao redor do mundo.</p>
+      </div>
+    </div>
+  </div>
+  
+   <div class="container1" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <!--Joe Hahn-->
+    <div class="card" style="width: 18rem; margin-right: 250px;">
+      <img src="/static/images/JoeHahn.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Joe Hahn</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">DJ/Sampler</p>
+        <p class="card-text" style="font-size: 13px;">Co-fundador do Linkin Park e talentoso DJ e produtor de música. Reconhecido por sua versatilidade e inovação, tanto na produção musical quanto nas artes visuais.</p>
+      </div>
+    </div>
+
+    <!--Rob Bourdon-->
+    <div class="card" style="width: 18rem; margin-right: 250px;">
+      <img src="/static/images/RobBourdon.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Rob Bourdon</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Baterista</p>
+        <p class="card-text" style="font-size: 13px;">Baterista do Linkin Park, reconhecido por sua habilidade e energia nas performances ao vivo. Contribuiu para definir o som poderoso e dinâmico da banda.</p>
+      </div>
+    </div>
+
+  
+      <!--Dave Farrel-->
+    <div class="card" style="width: 18rem;margin-right: 250px;">
+      <img src="/static/images/Dave Farrel.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Dave Farrel</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Baixista</p>
+        <p class="card-text" style="font-size: 12px;">Baixista do Linkin Park, conhecido por sua presença de palco e habilidade musical. Contribuiu para a base sólida e inovadora do som da banda.</p>
+      </div>
+    </div>
+  </div>
+ 
+ <br>
+
+</div>
+  
+
+<!--Albuns-->
+<div class="fundo2">
+  <h1 style="color: green; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Maratone os albuns</h1>
+  <div class="container1" style="display: flex; flex-wrap: wrap; justify-content: center;margin-bottom: 40px;">
+    <!--Hybrid Teory-->
+    <div class="card" style="width: 18rem; margin-right: 250px;">
+      <img src="/static/images/Hybrid Teory.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hybrid Teory</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Destaque: In The End</p>
+        <p class="card-text" style="font-size: 13px;">"Hybrid Theory", o álbum de estreia do Linkin Park, lançado em 2000, introduziu um estilo inovador que fundia elementos de rock, metal e rap, criando uma sonoridade única e cativante que capturou a atenção de milhões de ouvintes em todo o mundo.</p>
+      </div>
+    </div>
+
+    <!--Meteora-->
+    <div class="card" style="width: 18rem; margin-right: 250px;margin-bottom: 40px; margin-top: 35px;">
+      <img src="/static/images/Meteora.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Meteora</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Destaque: Numb</p>
+        <p class="card-text" style="font-size: 13px;">"Meteora", o segundo álbum do Linkin Park, lançado em 2003, consolidou o estilo distintivo da banda, com uma fusão única de rock, metal e rap. Com faixas poderosas como "Numb" e "Breaking the Habit", o álbum ampliou ainda mais o impacto global da banda.</p>
+      </div>
+    </div>
+
+  
+      <!--Minutes to Midnight-->
+    <div class="card" style="width: 18rem;margin-right: 250px;">
+      <img src="/static/images/Minutes to Midnight.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Minutes to Midnight</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Destaque: What I've Done</p>
+        <p class="card-text" style="font-size: 12px;">"Minutes to Midnight", terceiro álbum do Linkin Park de 2007, marcou uma mudança sonora significativa. Combinando rock alternativo, eletrônica e acústico, faixas como "What I've Done" refletiram a maturidade musical da banda. O álbum solidificou ainda mais o Linkin Park como uma influência duradoura na cena musical contemporânea.</p>
+        
+      </div>
+    </div>
+  </div>
+  
+   <div class="container1" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <!--A Thousand Suns-->
+    <div class="card" style="width: 18rem; margin-right: 150px;">
+      <img src="/static/images/A Thousand Suns.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">A Thousand Suns</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Waiting for the End</p>
+        <p class="card-text" style="font-size: 13px;">
+          
+"Thousand Suns", lançado em 2010, é o quarto álbum do Linkin Park, destacando-se por sua abordagem sonora inovadora. Combinando elementos de eletrônica e rock alternativo, o álbum aborda temas complexos como guerra e tecnologia. Músicas como "The Catalyst" exemplificam a experimentação e a profundidade lírica da banda.
+          
+          
+          </p>
+      </div>
+    </div>
+
+    
+    <!--Living Things-->
+    <div class="card" style="width: 18rem; margin-right: 150px;">
+      <img src="/static/images/Living Things.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Living Things</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Destaque: Burn it Down</p>
+        <p class="card-text" style="font-size: 13px;">"Living Things", lançado em 2012, é o quinto álbum do Linkin Park, marcando um retorno à sonoridade mais enérgica da banda. Combinando rock, eletrônica e elementos pop, o álbum apresenta uma fusão coesa de estilos. Faixas como "Burn It Down" demonstram a capacidade da banda de criar músicas cativantes e emocionantes, mantendo sua relevância na cena musical contemporânea.</p>
+      </div>
+    </div>
+
+  
+      <!--The Hunting Party-->
+    <div class="card" style="width: 18rem;margin-right: 150px;">
+      <img src="/static/images/The Hunting Party.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">The Hunting Party</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Destaque: Until it's Gone</p>
+        <p class="card-text" style="font-size: 12px;">
+          "The Hunting Party", o sexto álbum do Linkin Park lançado em 2014, marca um retorno às raízes mais pesadas da banda, apresentando uma sonoridade voltada para o rock e o metal. Faixas como "Until It's Gone" destacam a intensidade e a energia do álbum, combinando elementos de guitarra pesada com batidas eletrônicas pulsantes. </p>
+      </div>
+    </div>
+
+    <!--One More Light-->
+    <div class="card" style="width: 18rem;margin-right: 150px;">
+      <img src="/static/images/One More Light.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: green; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">One More Light</h5>
+        <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Destaque: Battle Symphony</p>
+        <p class="card-text" style="font-size: 12px;">"One More Light", o sétimo álbum do Linkin Park, lançado em 2017, destaca uma mudança sonora significativa da banda em direção ao pop e eletrônica. Faixas como "Battle Symphony" exemplificam essa transição, com uma melodia cativante e letras que abordam temas de resiliência e superação.</p>
+      </div>
+    </div>
+    
+  </div>
+  
+ 
+ <br>
+</div>
+
+<!--Conclusão-->
+ <div class="fundo1">
+  <div class="row gx-4 gx-lg-5 align-items-center justify-content-center py-3 container-fluid">
+        
+    <div class="col-lg-5">
+   
+    <p class="font-weight-light" style="font-size: 20px;text-align: justify-self: unset">
+      Descubra a essência do Linkin Park: uma jornada musical que transcende gêneros e gerações. Navegue pela sua discografia icônica, mergulhe nas letras que ecoam verdades universais e explore nossa resenha pessoal, revelando os momentos que moldaram nossa história. Bem-vindo à página central do Linkin Park, onde cada acorde conta uma história e cada verso ressoa com autenticidade!
+    </p>
+  </div>
+
+  <div class="card" style="width:400px;background-color: rgb(244, 244, 244); border:none">
+   <img class="card-img-top" src="/static/images/chesterbenington.jpg" alt="Card image">
+  </div>
+ </div>
+
+  <div class="row gx-4 gx-lg-5 align-items-center justify-content-center py-3 container-fluid">
+        
+    <div class="col-lg-5">
+ 
+         <p class="font-weight-light" style="margin-left: 50px;font-size: 20px; text-align:center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        Essa página é dedicada ao eterno ídolo Chester Bennington🖤🕊️
+        </p>
+    </div>
+  </div>
+
+  
+  
+
+ 
+  
+
+ 
+</div>
+{% endblock %}

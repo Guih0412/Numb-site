@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+<!--Título-->
+{% block title %}Avaliação{% endblock %}
+
+<!--Conteúdo-->
+{% block content %}
+
+<!--Alerta-->
+<div class="fundo3">
+<div class="alert alert-success text-center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" role="alert">
+  Chegou a hora do seu Feedback!
+</div>
+<!--Avalie a página-->
+
+
+
+<div class="container1">
+    <div class="img-spacing">
+      <img src="/static/images/papercut.jpeg">
+    </div>
+    <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(0, 59, 0);">Avalie nossa página Numbs by Linkin Park</h2>
+</div>
+
+
+<form action="/add" method="POST" id="linkin_park">
+<div class="container2">
+
+   <!--Nome-->
+  
+     <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" 3>Digite seu nome</h3>
+     <input type="text" name="nome" placeholder="Digite o nome" required>
+    
+  
+
+   <!--Email-->
+  <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Digite seu email</h3>
+   <input type="text" name="email" placeholder="Digite o email" required>
+  
+ 
+  <!--Nota-->
+  <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Dê a sua nota de 0 a 10</h3>
+  <input type="text" name="nota" placeholder="Digite a nota" required>
+  
+
+  <!--Feedback-->
+  <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Dê o seu feedback da página</h3>
+  <textarea type="text" name="feedback" placeholder="Digite o feedback" required></textarea>
+  
+
+  
+  <!--Sugestão-->
+  <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Dê sua sugestão</h3>
+  <textarea type="text" name="sugestao" placeholder="Digite a sugestão" required></textarea>
+  
+
+  <!--Música-->
+  <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Qual é a sua música favorita?</h3>
+  <textarea type="text" name="musica" placeholder="Digite a música" required></textarea>
+  
+
+  
+<!--Confirmar-->
+<div class="container1" style="margin-top: 20px;">
+  <p><button type="submit">Enviar</button></p>
+</div>
+</form>
+
+<!--Agradecimentos-->
+<div class="container1">
+  <h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(0, 59, 0); margin-top: 30px;">A Numbs by Linkin Park agradece por avaliar nossa página, seu feedback é muito importante para nós!</h2>
+</div>
+</div>
+
+<ul>
+  {% for task in avaliacao_table %}
+  <li>{{ task[0] }} - Due: {{ task[1] }}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

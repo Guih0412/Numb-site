@@ -1,0 +1,80 @@
+.fundo1 {
+    background-color: rgb(244, 244, 244);
+}
+
+.fundo2 {
+    background-color:rgb(255, 255, 255)
+}
+
+  
+.container1{
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container1 .img-spacing img {
+    text-align: center;
+    margin-right: 20px; /* Define a margem à direita da imagem */
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.fundo3 {
+    background-color:rgb(110, 239, 172)
+}
+
+input{
+    margin-left: 150px;
+    display: block;
+    height:100px;
+    margin-bottom: 20px;
+    color: rgb(1, 41, 7);
+    background-color: rgb(110, 239, 172);
+    border: 4px solid green;
+    border-color: rgb(0, 61, 0);
+    width: calc(100% - 20px); /* Largura do input */
+}
+
+.container2{
+    margin-left: 100px;
+    align-items: left;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.botao_confirmar{
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 61, 0);
+    border: 2px solid green
+}
+
+textarea{
+    margin-left: 150px;
+    display: block;
+    height:100px;
+    margin-bottom: 20px;
+    color: rgb(1, 41, 7);
+    background-color: rgb(110, 239, 172);
+    border: 4px solid green;
+    border-color: rgb(0, 61, 0);
+    width: calc(100% - 20px); /* Largura do input */
+}
+
+
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(42, 174, 82);
+    width: 100px;
+    height: 50px;
+}
+
+
